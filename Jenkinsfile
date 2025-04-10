@@ -19,4 +19,12 @@ pipeline {
         }
 
     }
+    post {
+        always {
+            echo 'Pipeline execution finished.'
+        }
+        failure {
+            echo 'Build failed.'
+        }
+    }
 }
