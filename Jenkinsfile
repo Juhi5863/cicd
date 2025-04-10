@@ -31,9 +31,7 @@ pipeline {
         }
 
         stage('Docker Build & Push') {
-            when {
-                branch 'develop'
-            }
+            
             steps {
                 script {
                     def imageTag = "${env.BUILD_NUMBER}"
