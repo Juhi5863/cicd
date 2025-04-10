@@ -4,7 +4,7 @@ pipeline {
     environment {
         REGISTRY = 'docker.io/juhichoudhary'
         IMAGE_NAME = 'java-microservice'
-        KUBE_CONFIG = credentials('kubeconfig') // Secret file in Jenkins for your kubeconfig
+        KUBE_CONFIG = credentials('kubeconfig')
     }
 
     options {
